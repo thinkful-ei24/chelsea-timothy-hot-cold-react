@@ -9,11 +9,10 @@ export default class HotOrColdGame extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      guessThisNumber: Math.floor(Math.random() * 101),
+      correctNumber: Math.floor(Math.random() * 101),
       mostRecentGuessed: null,
       pastGuesses: [],
-      feedbackText: 'Make your Guess!',
-      feedbackOptions: ['Hot', 'Cold', 'You won. Click New Game to play again']
+      feedbackText: 'Make your Guess!'
     };
   }
 
